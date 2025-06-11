@@ -43,6 +43,12 @@
       margin: 40px auto;
       padding: 0 20px;
     }
+    h2 {
+      border-bottom: 2px solid #9ebd8a;
+      padding-bottom: 6px;
+      margin-bottom: 20px;
+      color: #4a6b31;
+    }
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -52,6 +58,27 @@
       width: 100%;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    ul.facilities-list {
+      list-style: none;
+      padding-left: 0;
+      columns: 2;
+      column-gap: 40px;
+    }
+    ul.facilities-list li {
+      margin-bottom: 8px;
+      position: relative;
+      padding-left: 24px;
+      font-weight: 600;
+      color: #3b5323;
+    }
+    ul.facilities-list li::before {
+      content: "✔️";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 18px;
+      line-height: 1;
     }
     footer {
       background-color: #e8f0e3;
@@ -65,6 +92,7 @@
 
   <nav>
     <a href="#despre">Despre</a>
+    <a href="#facilitati">Facilități</a>
     <a href="#galerie">Galerie</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -75,7 +103,85 @@
 
   <section id="despre">
     <h2>Despre noi</h2>
-    <p>Bine ați venit la Casa Mary, un loc unde liniștea munților se îmbină cu ospitalitatea tradițională. Situată în inima naturii, în comuna Șugag – Alba, pensiunea noastră vă oferă confort, relaxare și momente de neuitat.</p>
+    <p>Casa Mary din comuna Șugag, Alba este cunoscută pentru atmosfera sa primitoare și pentru facilitățile oferite, care includ camere confortabile și acces la diverse activități oferite cum ar fi: masa de tenis, trambulină, darts, biciclete, ciubăr exterior.</p>
+    <p>Șugag este o destinație frumoasă, ideală pentru drumeții și explorarea peisajelor montane: drumeții, mersul cu bicicleta în natură.</p>
+    <p>Casa Mary se află pe șoseaua 67C Transalpia (cea mai înaltă șosea din România), Rânca-Sebeș, la 100 m de șoseaua principală într-o zonă liniștită, la o distanţă de 27 km faţă de orașul Sebeș, la 15 km față de Lacul Tău, Barajul Oașa și la 50 km de Domeniul Schiabil Șureanu.</p>
+    <p>Dacă ai nevoie de informații suplimentare despre Casa Mary sau despre zona din jur, contactați-ne!</p>
+  </section>
+
+  <section id="facilitati">
+    <h2>Facilități</h2>
+
+    <h3>Top facilități</h3>
+    <ul class="facilities-list">
+      <li>Grădină / curte</li>
+      <li>Parcare</li>
+      <li>WiFi gratuit</li>
+    </ul>
+
+    <h3>Facilități generale</h3>
+    <ul class="facilities-list">
+      <li>Bucătărie la dispoziția turistului</li>
+    </ul>
+
+    <h3>Zone comune</h3>
+    <ul class="facilities-list">
+      <li>Living</li>
+    </ul>
+
+    <h3>La dispoziția turiștilor</h3>
+    <ul class="facilities-list">
+      <li>Frigider la comun</li>
+    </ul>
+
+    <h3>În living</h3>
+    <ul class="facilities-list">
+      <li>TV</li>
+    </ul>
+
+    <h3>În curte</h3>
+    <ul class="facilities-list">
+      <li>Barbeque / grătar</li>
+      <li>Foișor</li>
+      <li>Pomi fructiferi</li>
+    </ul>
+
+    <h3>Facilități camere</h3>
+    <ul class="facilities-list">
+      <li>Balcon</li>
+      <li>Birou</li>
+      <li>Cabină de duș</li>
+      <li>Cadă</li>
+      <li>Canale TV prin cablu</li>
+      <li>Coș de gunoi</li>
+      <li>Dulap sau garderobă</li>
+      <li>Hârtie igienică</li>
+      <li>Lenjerie de pat</li>
+      <li>Pardoseală cu parchet melaminat</li>
+      <li>Pernă cu puf</li>
+      <li>Plasă țânțari</li>
+      <li>Priză lângă pat</li>
+      <li>Prosoape</li>
+      <li>Săpun / gel de duș</li>
+      <li>Sobă pe lemne</li>
+      <li>TV</li>
+      <li>Umerașe pentru haine</li>
+      <li>Uscător de păr</li>
+      <li>Vedere spre curtea interioară</li>
+      <li>Vedere spre grădină / curte</li>
+      <li>Vedere spre munte</li>
+      <li>Vedere spre stradă</li>
+      <li>Ventilator</li>
+    </ul>
+  </section>
+
+  <section id="politica">
+    <h2>Politica de rezervări</h2>
+    <p><strong>Check In:</strong> 15:00 - 15:30</p>
+    <p><strong>Check Out:</strong> 11:00 - 11:30</p>
+
+    <h2>Plata</h2>
+    <p><strong>Metode de plată acceptate:</strong> numerar, transfer bancar</p>
   </section>
 
   <section id="galerie">
